@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Tracking System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>Material Tracking System</h1>
+    <form id="materialForm">
+        <label for="material_name">Material Name:</label>
+        <input type="text" id="material_name" placeholder="Enter material name" required>
+
+        <label for="supplier_name">Supplier Name:</label>
+        <input type="text" id="supplier_name" placeholder="Enter supplier name" required>
+
+        <label for="batch_number">Batch Number:</label>
+        <input type="text" id="batch_number" placeholder="Enter batch number" required>
+
+        <label for="item_code">Item Code:</label>
+        <input type="text" id="item_code" placeholder="Enter item code" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter location" required>
+
+        <button type="submit">Generate QR Code</button>
+    </form>
+    <div id="qrCodeContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
